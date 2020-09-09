@@ -1,7 +1,11 @@
-/* Hiker's Guide CSS
-================================================== 
-================================================== */
-
-html {
-	
+:root{
+    --greenblue1: #1abc9c;
+    --greenblue2: #16a085;
+    --white: #eeeeee;
+    --light-gray1: #cccccc;
+    --light-gray2: #aaaaaa;
+    --mid-gray: #888888;
+    --dark-gray1: #222222;
+    --dark-gray2: #111111;
+    --black: #000000;
 }

@@ -1,48 +1,107 @@
-<!-- HTML Comment -->
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Contact</title>
 		<meta name="description" content="Contact Page for WDS Project">
-
-		<!-- CSS -->
-		<link rel="stylesheet" href="../css/main.css">
-		<!-- <link rel="stylesheet" href="../css/reset.css"> -->
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
         <header>
-            <a href="index.html"><img src="images/hikersGuide.png" alt = "hikersGuide Logo" id = "logo" ></a>
+            <a href="index.html"><img src="images/hikersGuide.png"></a>
             <nav>
                 <ul>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <section>
+            <div>
+                <ul>
+                    <li><a href="tel:5551234567">1 800 123 4567</a></li>
+                    <li><a href="https://gmail.com">generic.email@company.org</a></li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <a href="https://www.google.com/maps/place/Boulder,+CO/@40.0292888,-105.310017,12z/data=!3m1!4b1!4m5!3m4!1s0x876b8d4e278dafd3:0xc8393b7ca01b8058!8m2!3d40.0149856!4d-105.2705456">Boulder, CO</a>
+            </div>
+        </section>
         <section>
             <h1>Contact Us!</h1>
             <p>
                 We're happy to talk with any and all interested in reaching out! 
                 Leave an email throug the form below and we'll get back to you!
             </p>
-            <form>           
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Name"> 
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Email">    
-
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Subscribe to Newsletter</label>
-
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="msg" placeholder="Message">wafadas</textarea>      
-
+            <form>  
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div> 
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>          
+                
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="msg" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Subscribe to Newsletter</label>
+                </div>
                 <button>Submit</button>
             </form>
-        </section>        
+        </section>
+        <footer>
+            <section>
+                <section>
+                    <h2>Upcoming Events</h2>
+                    <article>
+                        <h3>Article Title</h3>
+                        <p>description</p>
+                    </article>
+                    <article>
+                        <h3>Article Title</h3>
+                        <p>description</p>
+                    </article>
+                        <h3>Article Title</h3>
+                        <p>description</p>
+                </section>
+                <section>
+                    <h2>New Hikers</h2>
+                    <img src="images/johndoe.jpg" alt="john doe's photo">
+                    <img src="images/tomrosen.jpg" alt="thomas rosen's photo">
+                    <img src="images/amymartin.jpg" alt="amy martin's photo">
+                    <img src="images/mattjones.jpg" alt="matthew jone's photo">
+                </section>
+                <section>
+                    <h2>About</h2>
+                    <aside>Caption</aside>
+                    <p>Description</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <p>Copyright Information</p>
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Newsletter</a>
+                </section>
+                <section>
+                    <a href="https://facebook.com/">Facebook</a>
+                    <a href="https://twitter.com/">Twitter</a>
+                    <a href="https://YouTube.com">YouTube</a>
+                    <a href="https://google.com">Google</a>
+                    <a href="https://Instagram.com">Instagram</a>
+                </section>            
+            </section>         
+        </footer>  
 	</body>
 </html>
