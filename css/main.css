@@ -38,7 +38,7 @@ ul li:hover{
 }
 
 h2{
-    font-family: "program", sans-serif;
+    font: program;
     font-family: program, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -86,11 +86,7 @@ header::before{
 #logo{  
     margin: 5rem 20rem;
     float: left;
-    opacity: 50%;
-}
-#logo a img::after{
-    content:"";
-    opacity: 100%;
+    opacity: 99%;
 }
 #navigation{
     position: relative;
@@ -168,6 +164,27 @@ a{
     content:"";
     opacity: 100%;
 }
+.dot {
+  height: 12.5px;
+  width: 12.5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: block;
+  margin:1rem;
+}
+.dot:nth-child(2){
+    opacity: 100%;
+}
+#dot-container{
+    position: relative;
+    top: 26rem;
+    float: right;
+    right: 8.5rem;
+}
+#location{
+    width: 100%;
+    height: 19.5rem;
+}
 #location h2{
     width: 60%;    
     border-top: .1rem solid var(--mid-gray);
@@ -178,9 +195,10 @@ a{
 }
 #location div{
     position: relative;
+    width: 30%;
     float: right;
     top: 4rem;
-    right: 4rem;
+    right: -8rem;
     background-color: var(--dark-gray1);
     border-right: .5rem solid var(--greenblue1);
 }
@@ -203,9 +221,12 @@ a{
     left: 25%; 
     transform:translateX(-75%);
 }
-.post h2, .post h3, .post p, .post img, .post a{
-    margin: 2.5rem 2.5rem; 
-    width: 80%;   
+.post h3, .post h4{
+    margin: 2.5rem 2.5rem;  
+}
+.post img{
+    width: 100%;
+    height: 100%;
 }
 .read-more a{   
     position: relative;
@@ -216,7 +237,7 @@ a{
     font-weight: bold;
     text-transform: uppercase;
     padding: 1rem 2rem;
-    margin: 2rem;
+    margin: 2rem 0rem;
     width: max-content;
     background-color: var(--greenblue1);
     border-bottom: .5rem solid var(--greenblue2);
@@ -238,8 +259,7 @@ a{
     border: 2px solid var(--white);
 }
 #adventure{ 
-    width: 100%;
-    
+    width: 100%;   
 }
 .background{
     background-color: var(--greenblue2);
@@ -257,20 +277,34 @@ a{
 #content h2{
     padding-top: 10rem;
 }
-#content h2, #content blockquote, #content a, #content p{
+#content h2, #content blockquote{
     padding-left: 10rem;
+}
+#content blockquote{
+    padding-top: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    font-style: italic;
+    font-weight: 2.4rem;
 }
 #content a{
 visibility: hidden;
 }
+blockquote ~ p{
+    float: left;
+    transform: translateY(-50%);
+    color: var(--white);
+    font-weight: normal;
+    margin: 4rem 0;
+}
 #content a::after{
     visibility: visible;
     content:"";
-    position: absolute;
+    float: left;
     height: 3rem;
     width: 3rem;
-
-    background: url("../images/twitter.png");
+    margin-left: 10rem;
+    background: url("../images/twitter.png") no-repeat;
 }
 #p-join{  
     position: relative; 
@@ -291,8 +325,7 @@ visibility: hidden;
     width: 2.7rem;
     background: url("../images/arrow.png") no-repeat;
 }
-#c-join{ 
-    
+#c-join{  
     position: absolute;
     margin: 0;
     padding: 0;
@@ -311,9 +344,9 @@ footer{
     position: relative;
     left: 33%; 
     transform:translateX(-66%);  
-    width:15%;
+    width:20%;
     margin-top: 6rem; 
-    margin-left: 2rem;
+    margin-left: 0rem;
     margin-right: 4rem;
     margin-bottom: 8rem;
 }
@@ -329,17 +362,45 @@ footer{
 .footer-child p{
     font-size: 1.4rem;
 }
-.floating{
-    float: left;
-}
-div.floating p+address{
-    padding-left: 2rem; 
-}
+
 .footer-child ul li{
     clear: both;
+    opacity: 100%;
+}
+.floating{
+    float: left;
+    margin: .5rem;
+}
+.floating p, .floating h3, .floating address{
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    color: var(--light-gray2);
+}
+.floating h3+p, p+div.floating address{
+    font-weight: normal;
+}
+.floating h3, p+div.floating p{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.8rem;
+    opacity: 100%;
+}
+.floating p, .floating address{
+    margin-left: 2rem;
+    font-weight: bold;
+}
+.floating h3, .floating p{
+    margin-left: 2rem;
+    margin-top: 1.6rem;
+}
+li time{
+    float: left;
+    padding: 3.2rem .5rem;
+    width: 4.5rem;
 }
 #footer-bot{
-    height: 10rem;
+    height: 6.4rem;
     width: 100%;
     background-color: var(--black); 
     background-color: black;
@@ -347,8 +408,7 @@ div.floating p+address{
 }
 #legal{
     float: left;
-    height: 4rem;
-    margin: 2rem 10rem;
+    margin: 2.5rem 10rem;
 }
 #legal li, #social-media li{
     text-transform: uppercase;
@@ -369,7 +429,7 @@ div.floating p+address{
 }
 #social-media{
     float: right;
-    margin: 2rem 10rem;
+    margin: 1.5rem 10rem;
 }
 #fb, #twit, #yt, #goog, #ig{
     visibility: hidden;
