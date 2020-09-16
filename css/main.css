@@ -285,7 +285,7 @@ a{
     color: var(--white);
     font-weight: bold;
     font-style: italic;
-    font-weight: 2.4rem;
+    font-size: 2.4rem;
 }
 #content a{
 visibility: hidden;
