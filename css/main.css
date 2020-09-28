@@ -82,7 +82,7 @@ nav li::after{content:"";margin:1rem;border-right:2px solid var(--light-gray2)}
 
 article+nav li{display:inline-block;margin:.5rem;width:4rem;font-size:1.8rem}
 nav[aria-label="pagination"]{ position: relative; clear:left; top:0rem; width:80%; margin:.5rem auto;}
-nav[aria-label="pagination"] li::after { border: none; margin: none;}
+nav[aria-label="pagination"] li::after { border: none; margin: 0;}
 
 .full-background{height:75rem;background-size:cover}
 .reset-background1{ background-color: var(--dark-gray1);}
@@ -123,7 +123,7 @@ nav[aria-label="pagination"] li::after { border: none; margin: none;}
 .contact-info ul{height: 10rem; transform: translateY(40%); width:80%; margin:4rem auto; text-align:center;}
 .contact-info li{display:inline; font-size: 2.4rem;}
 .contact-info li::after{content:"";margin: 6rem;border-right: 2px solid var(--greenblue2);}
-.contact-info li:nth-child(3)::after{content: none;border: none;margin: none;}
+.contact-info li:nth-child(3)::after{content: none;border: none;margin: 0;}
 
 div.contact-form,div.contact-form{position: relative; width: calc(100% /2 - 2rem / 2);margin: 2rem 4rem}
 .contact-form{float: left}
