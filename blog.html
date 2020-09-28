@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About</title>
+    <title>Blog</title>
     <meta name="description" content="About Page for WDS Project">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
@@ -21,12 +21,12 @@
             </ul>
         </nav>
     </header>
-    <section class="section">
-        <h2 class="post-heading">Posts</h2>
-        <article class="post blog">
-            <h3>Current Post</h3>
-            <time>09-05</time>
-            <aside>Category</aside>
+    <section>
+        <h2 class="post-heading">Daily Post</h2>
+        <article class="blog">
+            <h3>Post Title</h3>
+            <time datetime="11-14-2020">November 14th, 2020</time>
+            <p class>Category</p>
             <p><img src="images/hikers1001.jpg" width="250" height="150" alt="hiking photo"></p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -52,7 +52,7 @@
                 ultricies mi quis hendrerit dolor magna.
                 Sed sed risus pretium quam vulputate dignissim. Elit at imperdiet dui accumsan sit amet nulla.
             <p>
-            <div class="share-post">
+            <div class="share-post reset-background1">
                 <ul class="icons">
                     <li><a class="ig" href="https://Instagram.com">Instagram</a></li>
                     <li><a class="goog" href="https://google.com">Google</a></li>
@@ -60,9 +60,27 @@
                     <li><a class="twit" href="https://twitter.com/">Twitter</a></li>
                     <li><a class="fb" href="https://facebook.com/">Facebook</a></li>
                 </ul>
-                <p class="share">Share:</p>
+                <p>Share:</p>
             </div>
         </article>
+        <aside class="author-panel">
+            <h3>Author</h3>
+            <h4>Role</h4>
+            <p>
+                Vulputate dignissim suspendisse in est. Sed adipiscing diam donec adipiscing tristique.
+                Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Ut eu sem integer vitae.
+                Odio morbi quis commodo odio aenean. Ut etiam sit amet nisl purus in mollis. Pharetra massa massa
+                ultricies mi quis hendrerit dolor magna.
+            </p>
+            <ul class="icons">
+                <li><a class="ig" href="https://Instagram.com">Instagram</a></li>
+                <li><a class="goog" href="https://google.com">Google</a></li>
+                <li><a class="yt" href="https://YouTube.com">YouTube</a></li>
+                <li><a class="twit" href="https://twitter.com/">Twitter</a></li>
+                <li><a class="fb" href="https://facebook.com/">Facebook</a></li>
+            </ul>
+            <button>View Profile</button>
+        </aside>
         <nav aria-label="pagination">
             <ul>
                 <li><button class="left">previous</button></li>
@@ -73,49 +91,53 @@
             </ul>
         </nav>
     </section>
-    <section class="section">
+    <section>
         <h2>Comments</h2>
         <ul>
             <li>
-                <time>09-06</time>
-                <div class="floating clear">
+                <div>
                     <h3>User</h3>
+                    <time>09-06</time>
                     <p>Consectetur adipiscing elit, set do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
+
                 </div>
             </li>
             <li>
-                <time>09-07</time>
-                <div class="floating">
+                <div>
                     <h3>User</h3>
+                    <time>09-07</time>
                     <p>Consectetur adipiscing elit, set do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
+
                 </div>
             </li>
             <li>
-                <time>09-08</time>
-                <div class="floating">
+                <div>
                     <h3>User</h3>
+                    <time>09-08</time>
                     <p>Consectetur adipiscing elit, set do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
+
                 </div>
             </li>
         </ul>
     </section>
-    <section class="section send-comments">
+    <section class="send-comments">
         <h3 class="form-heading">Send a Comment</h3>
         <form>
             <div class="form">
-                <input type="text" id="fname" name="fname" autocomplete="off" required="off">
-                <label for="fname" class="label-name"><span class="content-name">Name</span></label>
+                <label for="fname" class="label-name">Name</label>
+                <input type="text" id="fname" name="fname" autocomplete="off" required="off" placeholder="Name">
             </div>
             <div class="form">
-                <input type="email" id="email" name="email" autocomplete="off" required="off">
+                <input type="email" id="email" name="email" autocomplete="off" required="off" placeholder="Email">
                 <label for="fname" class="label-name"><span class="content-name">Email</span></label>
             </div>
             <div class="form">
-                <textarea id="msg" name="msg" autocomplete="off" required="off"></textarea>
-                <label for="fname" class="label-name"><span class="content-name">Message</span></label>
+                <label for="fname" class="label-name">Message</label>
+                <textarea id="msg" name="msg" autocomplete="off" required="off" placeholder="Message"></textarea>
+
             </div>
             <div class="form">
                 <button>Submit</button>
@@ -129,21 +151,21 @@
                 <h2 class="footer-heading">Upcoming Events</h2>
                 <ul>
                     <li>
-                        <time>09-30</time>
+                        <time datetime="11-14-2020">Nov 14</time>
                         <div class="floating">
                             <h3>Consectetur adipisicing elit</h3>
                             <p>Description</p>
                         </div>
                     </li>
                     <li>
-                        <time>09-20</time>
+                        <time datetime="11-09-2020">Nov 9</time>
                         <div class="floating">
                             <h3>Consectetur adipisicing elit</h3>
                             <p>Description</p>
                         </div>
                     </li>
                     <li>
-                        <time>09-10</time>
+                        <time datetime="10-23-2020">Oct 23</time>
                         <div class="floating">
                             <h3>Consectetur adipisicing elit</h3>
                             <p>Description</p>
@@ -210,5 +232,6 @@
         </section>
     </footer>
 </body>
+
 
 </html>
