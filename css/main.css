@@ -41,12 +41,12 @@ header div{position:relative;width:100%;top:45rem;height:30rem;background-image:
 header div > div{position:relative;width:40%;float:right;top:-5rem; height: max-content;right:-8rem;background-color:var(--dark-gray1);border-right:.5rem solid var(--greenblue1)}
 header div > div > h2{width:60%;border-top:.1rem solid var(--mid-gray);border-bottom:.1rem solid var(--mid-gray)}
 header div{position: relative;}
-header div .previous{
+header .previous{
     top: -9rem;
     position: relative;
     float: left;
-    left: -4rem;}
-header div .next{
+    left: -38rem;}
+header .next{
     top: -9rem;
     position: absolute;
     float: left;
@@ -59,10 +59,10 @@ input{float: left; clear: right;}
 button{font-size:1.8rem;color:var(--mid-gray);border:2px solid var(--mid-gray);padding:.75rem 1rem;background:var(--dark-gray1);position:relative;left:50%;transform:translateX(-50%);text-transform:uppercase}
 button:hover{color:var(--white)}
 
-section > h2 ~ article > div {width: 100%; height: 4rem; background-color: var(--mid-gray);border-radius: 1.5rem 1.5rem 0rem 0rem;}
-article > div > time{position: relative; left: 10rem; top: .25rem; width: 80%; margin: 2rem auto;font-size:3.6rem; color: var(--greenblue1);}
+section > h2 ~ article > div {width: 100%; height: 4rem; background-color: var(--greenblue1);border-radius: 1.5rem 1.5rem 0rem 0rem;}
+article > div > time{position: relative; left: 10rem; top: .25rem; width: 80%; margin: 2rem auto;font-size:3.6rem; color: var(--white);}
 
-section{width:80%; position:relative;margin:2rem auto;clear:both}
+section{width:80%; position:relative;margin:2rem auto;clear:both; background-color: var(--dark-gray1);}
 article{float:left;margin:2rem;background-color:var(--dark-gray2);width:calc(100% / 3 - 12rem /3)}
 article h3, article h4{margin:2.5rem;text-transform:uppercase;max-width:max-content}
 article img{width:100%;height:100%}
@@ -116,63 +116,56 @@ nav[aria-label="pagination"] li::after { border: none; margin: none;}
 
 .contact-info ul{height: 10rem; transform: translateY(40%); width:80%; margin:4rem auto; text-align:center;}
 .contact-info li{display:inline; font-size: 2.4rem;}
-.contact-info li::after{
-    content:"";
-    margin: 6rem;
-    border-right: 2px solid var(--greenblue2);
-}
-.contact-info li:nth-child(3)::after{
-    content: none;
-    border: none;
-    margin: none;
-}
+.contact-info li::after{content:"";margin: 6rem;border-right: 2px solid var(--greenblue2);}
+.contact-info li:nth-child(3)::after{content: none;border: none;margin: none;}
 
 div.contact-form,div.contact-form{position: relative; width: calc(100% /2 - 2rem / 2);margin: 2rem 4rem}
 .contact-form{float: left}
-.contact-form h2, .contact-form p, .contact-form form {
-    margin: 2rem auto;
-}
-.contact-form button{
-    margin-top: 2rem;
-}
+.contact-form h2, .contact-form p, .contact-form form {margin: 2rem auto;}
+.contact-form button{margin-top: 2rem;}
 .contact-map{float: left; margin: 2rem auto; background-color:var(--dark-gray1);}
 #adventure{
     width: 100%;
 }
 #adventure div div{background-color:var(--greenblue2)}
+#adventure div div+p{
+    height:10rem;background-color:var(--dark-gray1);font-size:2.4rem;margin:0 auto;padding:0
+}
+#adventure div div+p>a{
+    margin:0 auto;color:var(--greenblue2)
+}
+#adventure div div+p>a+a{
+    text-indent:-9999px;margin-left:1rem;height:2.7rem;width:2.7rem;overflow:hidden;background:url(../images/arrow.png) no-repeat
+}
 #content{position:relative;height:36rem;width:100%;background:url(../images/climbers.png) no-repeat;background-size:contain;background-position:right;border-bottom:2rem solid var(--dark-gray2)}
 #content h2{padding-top:10rem}
 #content h2, #content blockquote{padding-left:16rem}
 #content blockquote{padding-top:2rem;color:var(--white);font-weight:700;font-style:italic;font-size:2.4rem}
 #content a{visibility:hidden}
+#content a::after{visibility:visible;content:"";float:left;height:3rem;width:3rem;margin-left:10rem;background:url(../images/twitter.png) no-repeat}
 
 blockquote ~ p{float:left;transform:translateY(-50%);color:var(--white);font-weight:400; margin-top: 4rem; margin-left:12rem;}
-#content a::after{visibility:visible;content:"";float:left;height:3rem;width:3rem;margin-left:10rem;background:url(../images/twitter.png) no-repeat}
-#c-join{height:10rem;background-color:var(--dark-gray1);font-size:2.4rem;margin:0 auto;padding:0}
-#c-join a{margin:0 auto;color:var(--greenblue2)}
-#c-join a+a{text-indent:-9999px;margin-left:1rem;height:2.7rem;width:2.7rem;overflow:hidden;background:url(../images/arrow.png) no-repeat}
 
 footer{background-color:var(--dark-gray2);width:100%}
 footer time{margin-left:2rem}
+footer section {width:80%;margin:0 auto; clear: none;}
+footer section section {float:left; background-color:var(--dark-gray2);position:relative;width:calc(100% / 3 - 10rem / 3)}
+footer section section h2{margin:2rem;border-bottom:1px solid var(--mid-gray); position: relative;font-size:2.4rem;text-transform:none;margin-bottom:4rem}
+footer section section h3{font-size:1.8rem; position: relative;}
+footer section section p{font-size:1.4rem; position: relative;}
+footer section section ul li{clear:both;opacity:100%; position: relative;}
 li time{float:left;padding:3.2rem .5rem;width:4.5rem}
 
-.footer-top, .footer-heading, .footer-child, .floating{ position: relative;}
-.footer-top{width:80%;margin:0 auto; clear: none;}
-.footer-heading{margin:2rem;}
+footer section, footer section section h2, footer section section, .footer-float{ position: relative;}
 
 
-.footer-child{float:left; background-color:var(--dark-gray2);position:relative;width:calc(100% / 3 - 10rem / 3)}
-.footer-child h2{border-bottom:1px solid var(--mid-gray); position: relative;font-size:2.4rem;text-transform:none;margin-bottom:4rem}
-.footer-child h3{font-size:1.8rem; position: relative;}
-.footer-child p{font-size:1.4rem; position: relative;}
-.footer-child ul li{clear:both;opacity:100%; position: relative;}
 
-.floating{float:left;}
-.floating p,.floating h3,.floating address{width:max-content;color:var(--light-gray2)}
-.floating h3+p,p+div.floating address{font-weight:400}
-.floating h3,p+div.floating p{color:var(--white);font-weight:700;font-size:1.8rem;opacity:100%}
-.floating p,.floating address{margin-left:2rem;font-weight:700}
-.floating h3,.floating p{margin-left:2rem;margin-top:1.6rem}
+.footer-float{float:left;}
+.footer-float p,.footer-float h3,.footer-float address{width:max-content;color:var(--light-gray2)}
+.footer-float h3+p,p+div.footer-float address{font-weight:400}
+.footer-float h3,p+div.footer-float p{color:var(--white);font-weight:700;font-size:1.8rem;opacity:100%}
+.footer-float p,.footer-float address{margin-left:2rem;font-weight:700}
+.footer-float h3,.footer-float p{margin-left:2rem;margin-top:1.6rem}
 
 #footer-bot{height:6.4rem;width:100%;background-color:var(--black);background-color:#000;clear:left}
 
