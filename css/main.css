@@ -36,20 +36,26 @@ h3{font-size:2.4rem;font-family:program,sans-serif;font-weight:700;color:var(--l
 h4{font-family:program,sans-serif;font-size:1.8rem;font-family:program,sans-serif;font-weight:700;color:var(--light-gray2)}
 h5{font-size:1.4rem;font-family:program,sans-serif;font-weight:700;color:var(--light-gray2)}
 
-header{background:url(../images/hikers1001.jpg) no-repeat; width:100%; height: 20rem; background-size:cover}
-header div{position:relative;width:100%;top:45rem;height:30rem;background-image:url(../images/mountain.png);background-size:cover;background-position:left}
-header div > div{position:relative;width:40%;float:right;top:-5rem; height: max-content;right:-8rem;background-color:var(--dark-gray1);border-right:.5rem solid var(--greenblue1)}
+header{background:url(../images/hikers1001.jpg) no-repeat; width:100%; height: 20rem; background-size:cover;}
+header::after{
+    content: "";
+    width:100%; height: 50rem;
+    background-color:rgba(0, 0, 0, 1)
+}
+header div{position:relative;width:100%;top:45rem;height:30rem;background-image:url(../images/mountain.png);background-size:100rem 30rem; background-repeat:no-repeat; background-position: -5% 0%; }
+header div > div{position:relative;width:40%;float:right;top:0rem; height: max-content;right:-8rem;background-color:var(--dark-gray1);border-right:.5rem solid var(--greenblue1)}
 header div > div > h2{width:60%;border-top:.1rem solid var(--mid-gray);border-bottom:.1rem solid var(--mid-gray)}
 header div{position: relative;}
-header .previous{
-    top: -9rem;
-    position: relative;
-    float: left;
-    left: -38rem;}
-header .next{
-    top: -9rem;
+header div .previous{
+    top: -4rem;
     position: absolute;
     float: left;
+    left: 16rem;}
+header .next{
+    top: -4rem;
+    position: absolute;
+    float: right;
+    right: -8rem;
 }
 
 form{margin:0 auto}
@@ -89,7 +95,7 @@ nav[aria-label="pagination"] li::after { border: none; margin: none;}
 
 .dot{height:12.5px;width:12.5px;background-color:#bbb;border-radius:50%;display:block;margin:1rem}
 .dot:nth-child(2){opacity:100%}
-.dot-container{position:relative;top:12rem;float:right;right:8.5rem}
+.dot-container{position:relative;top:16rem;float:right;right:8.5rem}
 
 .blog{width:calc(65% - 2rem);float:left; background-color: rgba(6.67%, 6.67%, 6.67%, .1); border: 1px solid rgba(6.67%, 6.67%, 6.67%, .2)}
 .author-panel{width:calc(35% - 2rem); float:right; margin-top: 2rem; background-color: rgba(6.67%, 6.67%, 6.67%, .1); border: 1px solid rgba(6.67%, 6.67%, 6.67%, .2)}
